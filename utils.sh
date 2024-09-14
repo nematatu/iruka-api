@@ -22,7 +22,7 @@ lambda_deploy() {
     fi
     
     cd lambda/iruka
-    funame=$(echo $filename | sed s/.js//)
+    funame=$(echo $filename | sed s/.mjs//)
     aws lambda get-function --function-name $funame > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         # functionが存在している時
@@ -49,7 +49,7 @@ lambda_deploy() {
 
 lambda_deploy_all(){
 
-    for lambdaf in lambda/iruka/*.js
+    for lambdaf in lambda/iruka/*.mjs
     do
         # lambda_deployはファイル名を引数として受け取る想定のため、不要な"lambda/"を取り除いています
         

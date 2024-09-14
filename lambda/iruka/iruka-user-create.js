@@ -55,7 +55,13 @@ exports.handler = async (event, context) => {
 //     })
 // };
 
+  //key:DI52JYB6QqyPfVYy4NW3XQV8s
+  //secret:D1HeKJ1v2cK1DirUUVatJA4t4P81BO4KvYqDlVB6vPKj0qHMNG
+
+  //accessToken:1639312054757789696-u3eLYSEoEukfj3h8c5QUXTieTvWSTI
+  //accessTokenSecret:Yz6TEs1A3Ki2e86Cy3Z5ZxYHvesecl4FPBgJUNgBSxhCy
   
+  //bearerToken:AAAAAAAAAAAAAAAAAAAAACnbsQEAAAAAaTUvJMX4n4cghc8DxXriRSUl4Zw%3DvCCepLVLwroynSGYVC8OUtA46iRmzgeOuvum5aLb9clRdIxM2G
   // DBにデータを登録するコマンドを用意
     const usercommand = new PutItemCommand(userparam);
     // client.send()でDBにデータを登録するコマンドを実行
